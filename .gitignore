@@ -1,0 +1,59 @@
+# W1 baseline: no .gitignore was found in the supplied RA project folder.
+# Merge with that original when available; preserve its useful project rules.
+
+# Local configuration and credentials; examples must contain placeholders only.
+.env
+.env.*
+!.env.example
+!.env.*.example
+/secrets/
+/credentials/
+*.pem
+*.key
+
+# Official/raw data and local downloads belong outside version control.
+# Do not ignore every CSV/JSON: small reviewed synthetic fixtures may be tracked.
+/data/
+/datasets/
+/downloads/
+/private/
+*.[aA][sS][fF]
+
+# Local outputs, caches, and databases.
+/artifacts/
+/tmp/
+/logs/
+*.log
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+*.sqlite3-journal
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3-wal
+*.sqlite3-shm
+
+# Optional Python development hygiene; these rules do not select the stack.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.ipynb_checkpoints/
+build/
+dist/
+*.egg-info/
+
+# Machine/editor files.
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*~
